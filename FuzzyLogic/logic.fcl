@@ -1,0 +1,462 @@
+
+FUNCTION_BLOCK tipper
+
+VAR_INPUT
+	s0 : REAL;
+	s1 : REAL;
+	s2 : REAL;
+	s3 : REAL;
+	s4 : REAL;
+	s5 : REAL;
+	s6 : REAL;
+	s7 : REAL;
+	s8 : REAL;
+	s9 : REAL;
+	s10 : REAL;
+	s11 : REAL;
+	s12 : REAL;
+	s13 : REAL;
+	s14 : REAL;
+	s15 : REAL;
+	s16 : REAL;
+	s17 : REAL;
+	s18 : REAL;
+	s19 : REAL;
+	s20 : REAL;
+	s21 : REAL;
+	s22 : REAL;
+	s23 : REAL;
+	s24 : REAL;
+	s25 : REAL;
+	s26 : REAL;
+	s27 : REAL;
+	s28 : REAL;
+	s29 : REAL;
+	s30 : REAL;
+	s31 : REAL;
+	s32 : REAL;
+	s33 : REAL;
+	s34 : REAL;
+	s35 : REAL;
+	s36 : REAL;
+	s37 : REAL;
+	s38 : REAL;
+	s39 : REAL;
+	s40 : REAL;
+	s41 : REAL;
+	s42 : REAL;
+	s43 : REAL;
+	s44 : REAL;
+	s45 : REAL;
+	s46 : REAL;
+	s47 : REAL;
+	s48 : REAL;
+	f49 : REAL;
+	f50 : REAL;
+	f51 : REAL;
+	f52 : REAL;
+	f53 : REAL;
+	f54 : REAL;
+	f55 : REAL;
+	f56 : REAL;
+	f57 : REAL;
+	f58 : REAL;
+	f59 : REAL;
+	f60 : REAL;
+	f61 : REAL;
+	f62 : REAL;
+	f63 : REAL;
+	f64 : REAL;
+END_VAR
+
+VAR_OUTPUT				// Define output variable
+	diagnoz : REAL;
+END_VAR
+
+FUZZIFY s0
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s1
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s2
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s3
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s4
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s5
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s6
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s7
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s8
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s9
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s10
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s11
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s12
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s13
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s14
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s15
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s16
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s17
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s18
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s19
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s20
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s21
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s22
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s23
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s24
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s25
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s26
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s27
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s28
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s29
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s30
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s31
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s32
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s33
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s34
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s35
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s36
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s37
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s38
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s39
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s40
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s41
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s42
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s43
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s44
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s45
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s46
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s47
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY s48
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+
+FUZZIFY f49
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f50
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f51
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f52
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f53
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f54
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f55
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f56
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f57
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f58
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f59
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f60
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f61
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f62
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f63
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+FUZZIFY f64
+	TERM no := trape 0 1 2 3;
+	TERM yes := trape 3 4 5 6;
+END_FUZZIFY
+
+
+DEFUZZIFY diagnoz
+	TERM d1 := trian 0 0.5 1;
+	TERM d2 := trian 1 1.5 2;
+	TERM d3 := trian 2 2.5 3;
+	TERM d4 := trian 3 3.5 4;
+	TERM d5 := trian 4 4.5 5;
+	TERM d6 := trian 5 5.5 6;
+	TERM d7 := trian 6 6.5 7;
+	TERM d8 := trian 7 7.5 8;
+	TERM d9 := trian 8 8.5 9;
+	TERM d10 := trian 9 9.5 10;
+	TERM d11 := trian 10 10.5 11;
+	TERM d12 := trian 11 11.5 12;
+	TERM d13 := trian 12 12.5 13;
+	TERM d14 := trian 13 13.5 14;
+	TERM d15 := trian 14 14.5 15;
+	TERM d16 := trian 15 15.5 16;
+	TERM d17 := trian 16 16.5 17;
+	TERM d18 := trian 17 17.5 18;
+	TERM d19 := trian 18 18.5 19;
+	TERM d20 := trian 19 19.5 20;
+	TERM d21 := trian 20 20.5 21;
+	TERM d22 := trian 21 21.5 22;
+	TERM d23 := trian 22 22.5 23;
+	METHOD : COG;		// Use 'Center Of Gravity' defuzzification method
+	DEFAULT := 0;		// Default value is 0 (if no rule activates defuzzifier)
+END_DEFUZZIFY
+
+RULEBLOCK No1
+	AND : MIN;			// Use 'min' for 'and' (also implicit use 'max' for 'or' to fulfill DeMorgan's Law)
+	ACT : MIN;			// Use 'min' activation method
+	ACCU : MAX;			// Use 'max' accumulation method
+
+	RULE 1 : IF ( s10 IS yes OR s11 IS yes OR s1 IS yes OR s12 IS yes OR s3 IS yes OR s0 IS yes OR s29 IS yes ) AND ( f49 IS yes OR f63 IS yes OR f64 IS yes ) THEN diagnoz IS d1;
+	RULE 2 : IF ( s12 IS yes OR s3 IS yes OR s11 IS yes OR s7 IS yes OR s8 IS yes OR s0 IS yes OR s30 IS yes OR s32 IS yes OR s4 IS yes ) AND ( f49 IS yes OR f50 IS yes OR f51 IS yes OR f64 IS yes OR f57 IS yes ) THEN diagnoz IS d2;
+	RULE 3 : IF ( s9 IS yes OR s15 IS yes OR s14 IS yes OR s2 IS yes OR s20 IS yes OR s40 IS yes ) AND ( f49 IS yes OR f50 IS yes OR f51 IS yes OR f58 IS yes OR f55 IS yes OR f62 IS yes OR f56 IS yes OR f57 IS yes ) THEN diagnoz IS d3;
+	RULE 4 : IF ( s3 IS yes OR s30 IS yes OR s12 IS yes OR s5 IS yes OR s18 IS yes ) AND ( f49 IS yes OR f50 IS yes OR f51 IS yes OR f52 IS yes OR f59 IS yes OR f64 IS yes OR f54 IS yes OR f55 IS yes OR f53 IS yes ) THEN diagnoz IS d4;
+	RULE 5 : IF ( s19 IS yes OR s20 IS yes OR s21 IS yes OR s26 IS yes OR s28 IS yes OR s33 IS yes ) AND ( f51 IS yes OR f52 IS yes OR f53 IS yes  OR f57 IS yes OR f56 IS yes OR f59 IS yes ) THEN diagnoz IS d5;
+	RULE 6 : IF ( s1 IS yes OR s19 IS yes OR s21 IS yes OR s18 IS yes OR s12 IS yes OR s20 IS yes ) AND ( f49 IS yes OR f50 IS yes OR f51 IS yes OR f52 IS yes OR f53 IS yes OR f59 IS yes OR f64 IS yes ) THEN diagnoz IS d6;
+	RULE 7 : IF ( s25 IS yes OR s3 IS yes OR s23 IS yes OR s36 IS yes OR s10 IS yes OR s39 IS yes OR s26 IS yes OR s32 IS yes OR s31 IS yes OR s29 IS yes ) AND ( f49 IS yes OR f50 IS yes OR f51 IS yes OR f52 IS yes OR f64 IS yes OR f63 IS yes OR f62 IS yes OR f53 IS yes  OR f59 IS yes OR f57 IS yes ) THEN diagnoz IS d7;
+	RULE 8 : IF ( s3 IS yes OR s11 IS yes OR s10 IS yes OR s1 IS yes OR s5 IS yes OR s13 IS yes OR s18 IS yes OR s23 IS yes OR s30 IS yes OR s33 IS yes ) AND ( f49 IS yes OR f53 IS yes OR f55 IS yes OR f58 IS yes ) THEN diagnoz IS d8;
+	RULE 9 : IF ( s3 IS yes OR s6 IS yes OR s14 IS yes OR s17 IS yes OR s18 IS yes OR s19 IS yes OR s23 IS yes OR s35 IS yes ) AND ( f49 IS yes OR f50 IS yes OR f51 IS yes OR f52 IS yes OR f58 IS yes OR f62 IS yes ) THEN diagnoz IS d9;
+	RULE 10 : IF ( s3 IS yes OR s16 IS yes OR s30 IS yes OR s32 IS yes OR s0 IS yes ) AND ( f49 IS yes OR f50 IS yes OR f51 IS yes OR f52 IS yes OR f56 IS yes ) THEN diagnoz IS d10;
+	RULE 11 : IF ( s9 IS yes OR s6 IS yes OR s5 IS yes OR s13 IS yes OR s15 IS yes OR s17 IS yes OR s18 IS yes OR s19 IS yes OR s21 IS yes OR s37 IS yes OR s41 IS yes ) AND ( f49 IS yes OR f50 IS yes OR f51 IS yes OR f52 IS yes OR f55 IS yes OR f61 IS yes OR f62 IS yes ) THEN diagnoz IS d11;
+	RULE 12 : IF ( s3 IS yes OR s11 IS yes OR s26 IS yes OR s24 IS yes ) AND ( f50 IS yes OR f51 IS yes OR f52 IS yes OR f53 IS yes OR f62 IS yes OR f64 IS yes ) THEN diagnoz IS d12;
+	RULE 13 : IF ( s20 IS yes OR s38 IS yes OR s39 IS yes ) AND ( f50 IS yes OR f51 IS yes OR f52 IS yes OR f59 IS yes ) THEN diagnoz IS d13;
+	RULE 14 : IF ( s19 IS yes OR s27 IS yes OR s29 IS yes OR s38 IS yes OR s39 IS yes) AND ( f51 IS yes OR f52 IS yes OR f53 IS yes OR f57 IS yes OR f59 IS yes ) THEN diagnoz IS d14;
+	RULE 15 : IF ( s3 IS yes OR s7 IS yes OR s5 IS yes OR s41 IS yes ) AND ( f51 IS yes OR f52 IS yes OR f62 IS yes OR f64 IS yes ) THEN diagnoz IS d15;
+	RULE 16 : IF ( s3 IS yes OR s1 IS yes OR s13 IS yes OR s16 IS yes OR s17 IS yes OR s18 IS yes OR s20 IS yes OR s21 IS yes ) AND ( f49 IS yes OR f50 IS yes OR f51 IS yes OR f52 IS yes OR f53 IS yes OR f55 IS yes OR f61 IS yes ) THEN diagnoz IS d16;
+	RULE 17 : IF ( s1 IS yes OR s9 IS yes OR s6 IS yes OR s13 IS yes OR s18 IS yes OR s37 IS yes OR s42 IS yes ) AND ( f51 IS yes OR f52 IS yes OR f55 IS yes ) THEN diagnoz IS d17;
+	RULE 18 : IF ( s13 IS yes OR s15 IS yes OR s18 IS yes OR s19 IS yes OR s20 IS yes OR s41 IS yes OR s43 IS yes OR s48 IS yes ) AND ( f49 IS yes OR f50 IS yes OR f51 IS yes OR f52 IS yes OR f55 IS yes ) THEN diagnoz IS d18;
+	RULE 19 : IF ( s3 IS yes OR s11 IS yes OR s17 IS yes OR s18 IS yes OR s19 IS yes OR s20 IS yes OR s30 IS yes OR s32 IS yes OR s35 IS yes OR s36 IS yes OR s44 IS yes ) AND ( f49 IS yes OR f50 IS yes OR f51 IS yes OR f52 IS yes OR f61 IS yes ) THEN diagnoz IS d19;
+	RULE 20 : IF ( s9 IS yes OR s7 IS yes OR s8 IS yes OR s6 IS yes OR s5 IS yes OR s13 IS yes OR s17 IS yes OR s18 IS yes OR s19 IS yes OR s20 IS yes OR s34 IS yes OR s35 IS yes OR s36 IS yes OR s37 IS yes OR s38 IS yes OR s47 IS yes ) AND ( f49 IS yes OR f50 IS yes OR f51 IS yes OR f52 IS yes OR f61 IS yes ) THEN diagnoz IS d20;
+	RULE 21 : IF ( s3 IS yes OR s11 IS yes OR s10 IS yes OR s9 IS yes OR s8 IS yes OR s17 IS yes OR s18 IS yes OR s19 IS yes OR s30 IS yes OR s44 IS yes OR s45 IS yes OR s46 IS yes ) AND ( f51 IS yes OR f52 IS yes OR f56 IS yes OR f60 IS yes ) THEN diagnoz IS d21;
+	RULE 22 : IF ( s12 IS yes OR s8 IS yes OR s18 IS yes OR s19 IS yes OR s20 IS yes OR s22 IS yes ) AND ( f51 IS yes OR f52 IS yes OR f56 IS yes OR f58 IS yes ) THEN diagnoz IS d22;
+	RULE 23 : IF ( s12 IS yes OR s13 IS yes OR s14 IS yes OR s15 IS yes OR s41 IS yes OR s45 IS yes OR s48 IS yes ) AND ( f49 IS yes OR f50 IS yes OR f51 IS yes OR f52 IS yes OR f53 IS yes OR f55 IS yes OR f62 IS yes ) THEN diagnoz IS d23;
+END_RULEBLOCK
+
+END_FUNCTION_BLOCK
+
