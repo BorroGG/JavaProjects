@@ -1,1 +1,1 @@
- # Здесь собраны мои проекты на языке программирования Java.
+ # Here are my mini projects in the Java programming language.
