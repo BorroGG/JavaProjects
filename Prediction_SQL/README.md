@@ -1,2 +1,2 @@
-# Программа, которая предугадывает будущее, используя базу данных MySQL.
-## Также имеется МаГиЧеСкИй гипноквадрат. 
+# A program that predicts the future using the MySQL database.
+## There is also a MAGIC Hypno Square.
